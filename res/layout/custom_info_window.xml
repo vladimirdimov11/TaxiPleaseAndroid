@@ -1,0 +1,61 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/background_info_window_repeat"
+    android:padding="10dp"
+    tools:context=".LogInActivity" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#f6f6f6"
+        android:padding="5dp" >
+
+        <TextView
+            android:id="@+id/tvDriverId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="5dp"
+            android:text="Id" />
+
+        <TextView
+            android:id="@+id/tvDriverSeats"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/tvDriverId"
+            android:layout_marginBottom="5dp"
+            android:text="Seats" />
+
+        <TextView
+            android:id="@+id/tvDriverTrunkVolume"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/tvDriverSeats"
+            android:text="Trunk Volume" />
+
+        <RatingBar
+            android:id="@+id/rbRating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvDriverTrunkVolume"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="5dp"
+            android:isIndicator="true"
+            android:progressDrawable="@drawable/rating_bar_style" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rbRating"
+            android:layout_centerHorizontal="true"
+            android:textSize="12sp"
+            android:text="Click to order this taxi" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
